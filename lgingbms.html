@@ -1,0 +1,400 @@
+<style type="text/css"><!--.Input {font-family: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px;}.Input22 {BORDER-RIGHT: #CCCCCC 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #808080 1px solid; PADDING-LEFT: 3px; font-family: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: middle; BORDER-LEFT: #808080 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #CCCCCC 1px solid;}.chkbox {PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: middle; PADDING-TOP: 2px;}.ErrorSymbol{font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;color: #FF0000;}--></style>
+<HTML>
+<HEAD>
+<TITLE>. : :NEW Company</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+
+body{
+	background: #EAE7E0 url(images/sand.jpg) repeat-x 0 0; 
+}
+.login-box {
+    color: #222;
+    height: 260px;
+    margin: 0 auto;
+    margin-top: -195px;
+    margin-left: -160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:320px;
+}
+.login-box-top {
+    padding:20px;
+}
+.login-box .user-pass {
+		margin-bottom: 20px;
+		border:1px solid #AAA;
+}
+
+
+.login-box #User_Name, .login-box #password {
+    background: #FAFAFA;
+    border-color: rgba(0,0,0,0.2);
+		padding: 10px 15px;
+		border:1px solid #AAA;
+}
+.login-box #User_Name {
+    -o-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -khtml-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+		border-radius: 10px 10px 0 0;
+		border:1px solid #AAA;
+}
+.login-box #password{
+    -o-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -khtml-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+		border-top-width: 0;
+    -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -khtml-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+}
+
+
+.login-box form {
+    margin:10px 0 20px 0;
+}
+.login-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input, select, textarea, button, .pagination li a, .toolbar li a {
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    /* useful if you don't want a bg color from leaking outside the border: */        
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+		}
+		
+.fr{
+	border:1px solid #AAA;
+	background-color: #EEE;
+    color: #111;
+		text-shadow: 0 1px 0 #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+		padding: 4px 8px;
+		align-items: flex-start;
+		text-align: center;
+		letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+		text-indent: 0px;
+		-webkit-appearance: button;
+		background-image: -webkit-linear-gradient(top, #FEFEFE, #EEE);
+		border-color: #AAA;
+		box-sizing: border-box;
+		background-clip: padding-box;
+		font: 300 13.3333px Arial;
+		  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4); 
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4); 
+
+
+}
+	.fr:hover{
+		-webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.5);
+-moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.5);
+box-shadow: 0 5px 15px 0 rgba(0,0,0,.5);
+	
+	}	
+select{
+	border-radius:7px;
+    border-top-width: 0;
+    -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -khtml-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+		color:#808080;
+		width:173px;
+		background: #FAFAFA;
+		padding: 2px;
+	
+		border:1px solid #AAA;
+}
+
+
+.line
+{
+	color:black;
+	width: 40px;
+	border-left-width: 50px;
+	border-right: 16px solid rgb(79, 99, 117);
+	height: 800px;
+}
+
+
+hr{
+	color:#C2E080;
+	border-left: 1px solid rgba(78, 72, 64, 0.589);
+	-o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -khtml-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 0 rgba(255,255,255,0.4);
+
+}
+
+.hdr{
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.stylTag {color: #99B3CC}
+.inrHdr{
+	font-size: 16px;
+	font-weight: bold;
+	color: #565a5eab;
+
+}
+.txt_label
+{
+font-family:Arial, Helvetica, sans-serif;
+font-weight:normal;
+font-size:12px;
+color:#333333;
+}
+.txt2
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:normal;
+font-size:9px;
+color:#333;
+}
+.stylLink {
+	font-size: 14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.styleField {color: #FF0072}
+
+.stylLabel {
+	color:rgba(53, 52, 52, 0.527);
+	font-weight: bold;
+	font-size: 18px;
+	font-family:arial,sans-serif bold;
+	
+}
+.style5{color:rgba(53, 52, 52, 0.527); font-weight:bold; }
+.style7 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #003366; }
+.style10 {font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 12px; color: #FFFFFF; }
+.style14 {font-weight: normal; font-size: 12px; font-family: Arial, Helvetica, sans-serif; color:#808080;}
+.style17 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; font-size: 9px; color: #FFFFFF; }
+.style22 {color: #99B3CC; font-size: 12px; }
+.style24 {font-weight: bold; font-family:Arial, Helvetica, sans-serif; color: #FFFFFF;}
+.style26 {font-family: Arial, Helvetica, sans-serif; color: #FFFFFF;}
+.style27 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; font-size: 10px; color: #FFFFFF; }
+.style31 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 14px; color: #003366; }
+.style34 {color: #99B3CC; font-size: 12px; font-weight: bold; }
+.style36 {color: #99B3CC; font-weight: bold; }
+.style37 {font-size: 14px; font-family:Arial, Helvetica, sans-serif; color: #FFFFFF;}
+.style38 {font-size: 10px; color: #99B3CC; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style39 {font-size: 9px; color: #99B3CC; font-family: Verdana, Arial, Helvetica, sans-serif;}
+#Layer1 {
+	position:absolute;
+	width:396px;
+	height:25px;
+	z-index:99;
+	left: 136px;
+	top: 164px;
+	visibility: visible;
+}
+-->
+</style>
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+		$('#User_Name').focus();
+		
+		var Tz = getTimezoneName();
+		
+		$('#User_TZ').val(Tz);
+		
+});
+function getTimezoneName() {
+	tmSummer = new Date(Date.UTC(2005, 6, 30, 0, 0, 0, 0));
+	so = -1 * tmSummer.getTimezoneOffset();
+	tmWinter = new Date(Date.UTC(2005, 12, 30, 0, 0, 0, 0));
+	wo = -1 * tmWinter.getTimezoneOffset();
+
+	if (-660 == so && -660 == wo) return 'Pacific/Midway';
+	if (-600 == so && -600 == wo) return 'Pacific/Tahiti';
+	if (-570 == so && -570 == wo) return 'Pacific/Marquesas';
+	if (-540 == so && -600 == wo) return 'America/Adak';
+	if (-540 == so && -540 == wo) return 'Pacific/Gambier';
+	if (-480 == so && -540 == wo) return 'US/Alaska';
+	if (-480 == so && -480 == wo) return 'Pacific/Pitcairn';
+	if (-420 == so && -480 == wo) return 'US/Pacific';
+	if (-420 == so && -420 == wo) return 'US/Arizona';
+	if (-360 == so && -420 == wo) return 'US/Mountain';
+	if (-360 == so && -360 == wo) return 'America/Guatemala';
+	if (-360 == so && -300 == wo) return 'Pacific/Easter';
+	if (-300 == so && -360 == wo) return 'US/Central';
+	if (-300 == so && -300 == wo) return 'America/Bogota';
+	if (-240 == so && -300 == wo) return 'US/Eastern';
+	if (-240 == so && -240 == wo) return 'America/Caracas';
+	if (-240 == so && -180 == wo) return 'America/Santiago';
+	if (-180 == so && -240 == wo) return 'Canada/Atlantic';
+	if (-180 == so && -180 == wo) return 'America/Montevideo';
+	if (-180 == so && -120 == wo) return 'America/Sao_Paulo';
+	if (-150 == so && -210 == wo) return 'America/St_Johns';
+	if (-120 == so && -180 == wo) return 'America/Godthab';
+	if (-120 == so && -120 == wo) return 'America/Noronha';
+	if (-60 == so && -60 == wo) return 'Atlantic/Cape_Verde';
+	if (0 == so && -60 == wo) return 'Atlantic/Azores';
+	if (0 == so && 0 == wo) return 'Africa/Casablanca';
+	if (60 == so && 0 == wo) return 'Europe/London';
+	if (60 == so && 60 == wo) return 'Africa/Algiers';
+	if (60 == so && 120 == wo) return 'Africa/Windhoek';
+	if (120 == so && 60 == wo) return 'Europe/Amsterdam';
+	if (120 == so && 120 == wo) return 'Africa/Harare';
+	if (180 == so && 120 == wo) return 'Europe/Athens';
+	if (180 == so && 180 == wo) return 'Africa/Nairobi';
+	if (240 == so && 180 == wo) return 'Europe/Moscow';
+	if (240 == so && 240 == wo) return 'Asia/Dubai';
+	if (270 == so && 210 == wo) return 'Asia/Tehran';
+	if (270 == so && 270 == wo) return 'Asia/Kabul';
+	if (300 == so && 240 == wo) return 'Asia/Baku';
+	if (300 == so && 300 == wo) return 'Asia/Karachi';
+	if (330 == so && 330 == wo) return 'Asia/Calcutta';
+	if (345 == so && 345 == wo) return 'Asia/Katmandu';
+	if (360 == so && 300 == wo) return 'Asia/Yekaterinburg';
+	if (360 == so && 360 == wo) return 'Asia/Colombo';
+	if (390 == so && 390 == wo) return 'Asia/Rangoon';
+	if (420 == so && 360 == wo) return 'Asia/Almaty';
+	if (420 == so && 420 == wo) return 'Asia/Bangkok';
+	if (480 == so && 420 == wo) return 'Asia/Krasnoyarsk';
+	if (480 == so && 480 == wo) return 'Australia/Perth';
+	if (540 == so && 480 == wo) return 'Asia/Irkutsk';
+	if (540 == so && 540 == wo) return 'Asia/Tokyo';
+	if (570 == so && 570 == wo) return 'Australia/Darwin';
+	if (570 == so && 630 == wo) return 'Australia/Adelaide';
+	if (600 == so && 540 == wo) return 'Asia/Yakutsk';
+	if (600 == so && 600 == wo) return 'Australia/Brisbane';
+	if (600 == so && 660 == wo) return 'Australia/Sydney';
+	if (630 == so && 660 == wo) return 'Australia/Lord_Howe';
+	if (660 == so && 600 == wo) return 'Asia/Vladivostok';
+	if (660 == so && 660 == wo) return 'Pacific/Guadalcanal';
+	if (690 == so && 690 == wo) return 'Pacific/Norfolk';
+	if (720 == so && 660 == wo) return 'Asia/Magadan';
+	if (720 == so && 720 == wo) return 'Pacific/Fiji';
+	if (720 == so && 780 == wo) return 'Pacific/Auckland';
+	if (765 == so && 825 == wo) return 'Pacific/Chatham';
+	if (780 == so && 780 == wo) return 'Pacific/Enderbury'
+	if (840 == so && 840 == wo) return 'Pacific/Kiritimati';
+	return 'US/Pacific';
+}
+</script>
+</head>
+
+<body>
+  <div class="login-box">
+			<section class="login-box-top">
+
+<form name="form1"  method="post" action="">
+  <table width="100%" height="100%" border="0">
+    <tr>
+      <td valign="middle" align="left"><table  vspace="75%" width="78%" border="0" align="center"  cellpadding="0.5" cellspacing="0">
+				<tr>
+					<td height="37" colspan="1" align="left">
+						
+						<header>
+		<img src="images/header_logo.jpg" align="middle" width="50px"; height="50px"; style=" margin:10px 10px 0 0; border-radius: 10px 10px 10px 10px;"><br><br>
+						</header>
+				
+						</td>
+						<td>
+								<hr width="2" size="47">
+							</td>
+          <td height="37"  align="left"><label></label>
+             <span class="stylLabel">
+								&nbsp;&nbsp;GLOBAL&nbsp;BUSINESS&nbsp;MANAGEMENT &nbsp;&nbsp;SOLUTION  V 4.1
+            </span> </td>
+          <td width="27" background="images/bg.PNG" ><div align="right"></div></td>
+          </tr>
+    
+        <tr>
+          <td height="207" colspan="3" ><table vspace="25%" width="79%"  border="0" align="center" cellpadding="0" cellspacing="0" >
+              <tr>
+                <td colspan="4" height="1"></td>
+              </tr>
+             
+
+                
+              <!------------------------------------------------------------------------------------------------------->              
+             
+          
+				
+							<tr>
+
+								<td height="34" align="middle" colspan="4"  class="inrHdr"><select  class="select_box"  name='current_db'  ><option value='GBMSV4_1_NEW'  >Select Company</option></select></td>
+							</tr>
+								<tr class="user-pass">
+				
+                <td  colspan="4" align="middle" class="styleField"><label>
+                  <input name="User_Name" id="User_Name" class="full" type="text" size="18" placeholder="Username" style="font:18px arial,sans-serif bold;height:25px;margin:0;padding:5px 8px 0 6px;vertical-align:top"/>
+                </label></td>
+              </tr>
+              <tr  class="user-pass">
+              
+                <td colspan="4"  align="middle"><span class="styleField">
+                  
+                  <input name="Password" class="full" id="password" type="password" size="18" placeholder="Password" style="font:18px arial,sans-serif bold;height:25px;margin:0;padding:5px 8px 0 6px;vertical-align:top"  />
+                  <input type="hidden" name="language" id="language"  value="english"><input type="hidden" name="User_TZ" id="User_TZ" value="">
+                  <input type="hidden" name="F_Y" id="F_Y" value="2009-2010">
+                 
+                </span></td>
+              </tr>
+              <tr>
+                <td colspan="1" height="10"></td>
+              </tr>
+              <tr>
+								<td height="44" colspan="2" align="middle"  ><span>&nbsp;<a href="forgotpassword.php" class="style14">Forgot&nbsp;password?</a></span><span style="margin-left:20px;"><input name="Submit" type="submit" class="fr" value="Login"/></span></td>
+							</tr>
+
+              <tr>
+                <td colspan="4"  height="2"></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="19" colspan="3">&nbsp;</td>
+        </tr>
+     
+        <tr>
+          <td colspan="3"  align="center"><span class="txt2"><br>
+          </span></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</form>
+</section>
+</div>
+</body>
+</html>
