@@ -1,0 +1,205 @@
+
+<!-- saved from url=(0045)http://ybs.webhop.net:200/gbmsv4.1_new/bc.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+
+
+
+		
+.ui-button:hover
+{
+  
+color: blue
+}
+.ui-button-text
+{
+	padding: 10px 4px 10px 4px;
+
+}
+	</style>
+<script type="text/javascript">
+var prev_mod = '';
+var prev_link_id = '';
+function expand_menu(mod_num, level, link_id)
+{
+	return false;
+	if(level>6)
+	{
+		return false;
+	}
+	//alert(link_id);
+	//alert(prev_mod);
+	//document.getElementById('row_'+level).innerHTML = '';
+	prev_link_id = link_id;
+	for(i=level+1;i<=5;i++)
+	{
+		if(document.getElementById('row_'+i))
+		document.getElementById('row_'+i).style.display = 'none';
+	}
+	document.getElementById('row_'+level).innerHTML = document.getElementById('mod_row_'+mod_num).innerHTML;
+	//document.getElementById('mod_row_'+mod_num).style.display = 'block';
+	document.getElementById('row_'+level).style.display = 'block';
+	//document.getElementById(link_id).style.color = '#DEDEDE';
+	//document.getElementById(prev_link_id).style.color = '#0099CC';
+
+	//$('#row_'+level+ ' a').removeClass("menu");
+
+	//$('#row_'+level+ ' a').addClass("menu_selected");
+
+	//	$('#row_'+level ' a ').css('color','#CCCC00');
+
+
+
+}
+
+if (parent.document.getElementById("mainpage").cols=="150,*")
+{
+	document.getElementById("hideshow").innerHTML="Hide Header";
+}
+
+function hideshow()
+{
+	if (document.getElementById("hideshow").innerHTML=="Show Header")
+	{
+		document.getElementById("hideshow").innerHTML="Hide Header";
+		parent.document.getElementById("mainpage").rows="150,*";
+	}
+	else
+	{
+		document.getElementById("hideshow").innerHTML="Show Header";
+		parent.document.getElementById("mainpage").rows="20,*";
+	}
+}
+
+</script>
+
+
+
+<title>::~:: | GBMS | ::~::</title>
+
+<link href="./css_hris.css" rel="stylesheet" type="text/css">
+<link href="./jquery-ui-1.8.1.custom.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./jquery-1.2.6.js.download"></script>
+<script type="text/javascript" src="./jquery-ui-custom.js.download"></script>
+<script type="text/javascript" src="./js_liveclock.js.download"></script>
+<script type="text/javascript" src="./main_index.js.download"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script>
+$(document).ready(function() 
+{
+	$("a[id^='link_id_']").button();
+	
+	
+	
+});
+  </script>
+
+
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	
+	z-index:1;
+	left: 372px;
+	top: 75px;
+}
+#Layer2 {
+	position:absolute;
+	width:114px;
+	height:56px;
+	z-index:2;
+	left: 879px;
+	top: 18px;
+}
+body
+{
+	background: #EAE7E0 url(./images/sand.jpg);
+	
+
+}
+
+
+
+
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#ECE9D8" >
+  <tbody><tr>
+    <td colspan="2" valign="top"><table width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
+		<tbody>
+			
+			<tr>
+				<td colspan="1" height="8px"></td>
+				</tr>
+			<tr>
+		
+          <td width="32%" valign="top"><b><font face="Arial, Helvetica, sans-serif" color="#000000" size="-1"> <span id="hideshow" onclick="hideshow()" style="cursor:pointer;">Hide Header</span> </font></b></td>
+
+          <td colspan="2" align="right" valign="top" class="lng_text" dir="ltr">   <span style="display:none" id="clock" class="lng_text btnheader2">05:34:43 <span class="divider">|</span> Saturday, 22 September 2018</span>	<span>Financial Year</span>
+	<span class="divider">|</span><select name="F_Y" class="fin_select_box" id="F_Y">
+  <option value="2014-2015">2014-2015</option><option value="2016-2017">2016-2017</option><option value="2013-2014">2013-2014</option><option value="2018-2019" selected="">2018-2019</option><option value="2017-2018">2017-2018</option>  </select>
+			<span class="divider">|</span> <a class="btnheader" href="http://ybs.webhop.net:200/gbmsv4.1_new/Password.php" target="mainFrame" style="text-decoration:none;" class="lng_text">
+	<i class="fas fa-key"></i>Change Password
+			</a> <span class="divider">|</span> 
+			 <a class="btnheader" target="mainFrame" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php" style="text-decoration:none;" class="lng_text"><span>
+				<img src="images/home.png" class="clr" width="11px" height="11px" style="padding: 4px 0 0 3px;" alt=""> Home</span>
+            </a> <span class="divider">|</span> <a class="btnheader" href="http://ybs.webhop.net:200/gbmsv4.1_new/logout.php" style="text-decoration:none; margin-right: 10px;" class="lng_text"><img src="images/out.png" width ="11px" height="11px" style="padding: 4px 0 0 3px;" alt="">
+            Signout 
+          </a>
+  </td>
+        </tr>
+        <tr>
+          <td valign="left"> <img src="images/header_logo.jpg" alt="Client Logo" width="50" height="50" align="left"><h1 style="margin-top:10px">YSC</h1></td>
+          <td valign="top"></td>
+          <td width="41%" align="center" valign="middle"> </td>
+        </tr>
+        
+	
+        
+    </tbody></table></td>
+  </tr>
+  <tr dir="ltr">
+
+	<td height="50" colspan="2" align="left"  valign="middle" class="menu">
+	
+	<br/>
+<a><span></span></a>
+
+     <a id="link_id_01" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=01" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text" ><i class="fas fa-user-tie" id="icon1" style="color:rgba(216, 29, 16, 0.849);"></i>System Manager </span></a> <span class="divider">|</span>
+            
+                
+     <a id="link_id_30" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=30" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fas fa-indent" id="icon1" style="color:rgba(146, 90, 16, 0.849);"></i>Inventory Management</span></a> <span class="divider">|</span>
+            
+                
+     <a id="link_id_02" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=02" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fas fa-user-alt" id="icon1" style="color:rgba(92, 124, 18, 0.849);"></i>Financial Accounting</span></a> <span class="divider">|</span>
+            
+                
+     <a id="link_id_03" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=03" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fas fa-sitemap" style":hover {color:blue}"></i>Human Resource Information System</span></a> <span class="divider">|</span>
+            
+                
+     <a id="link_id_04" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=04" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fab fa-squarespace" id="icon1" style="color:rgba(153, 107, 38, 0.849);"></i>Supply Chain</span></a> <span class="divider">|</span>
+            
+                
+     <a id="link_id_05" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=05" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fas fa-check-double" id="icon1" style="color:rgba(71, 55, 12, 0.849);"></i>Sales &amp; Distribution</span></a> <span class="divider">|</span>
+            
+                
+     <a id="link_id_06" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=06" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fab fa-product-hunt" id="icon1" style="color:rgba(22, 114, 131, 0.849);"></i>Production</span></a> <span class="divider">|</span>
+			
+	 <a><span style="margin-top:15px"></span></a>
+                
+     <a id="link_id_07" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=07" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fas fa-compass"  style="color:rgba(128, 70, 23, 0.849);"></i>Fixed Assets</span></a> <span class="divider">|</span>
+            
+                
+     <a id="link_id_08" href="http://ybs.webhop.net:200/gbmsv4.1_new/welcome.php?module=08" target="mainFrame" class="menu ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><i class="fas fa-project-diagram"  style="color:rgba(173, 49, 33, 0.849);"  ></i>Projects</span></a> <span class="divider">|</span>
+		
+	 </td>
+  </tr>
+   
+  
+</tbody></table>
+
+<br/>
+</body></html>
